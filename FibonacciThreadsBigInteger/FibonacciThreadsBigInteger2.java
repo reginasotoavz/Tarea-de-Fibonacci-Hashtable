@@ -1,3 +1,4 @@
+// Ediciones por compatibilidad con una versión anterior de Java: **
 import java.math.BigInteger;
 import java.util.Hashtable;
 
@@ -13,7 +14,7 @@ public class FibonacciThreadsBigInteger2 implements Runnable {
 
   @Override
   public void run() {
-    System.out.println("Starte #" + num); // ... (código existente)
+    System.out.println("Starte #" + num); // **
     BigInteger res = fibonacci(fi);
     System.out.println("Abschlussverfahren: " + num +" - "+"fibonacci(" + fi + ") =" + res); // ... (código existente)
   }
@@ -36,7 +37,7 @@ public class FibonacciThreadsBigInteger2 implements Runnable {
     memo.put(f, result);
     return result;
   }
-  public static void main(String[] args){
+  public static void main(String[] args){ // **
 
         Thread[] threads = new Thread[10];
 
