@@ -1,5 +1,5 @@
-// Se usará un Hashtable<Long, Long> para almacenar los resultados:
-// Ediciones por compatibilidad con una versión anterior de Java
+// Se usará un Hashtable<Long, Long> para almacenar los resultados
+// Ediciones por compatibilidad con una versión anterior de Java: **
 import java.util.Hashtable;
 
 public class FibonacciThreads2 implements Runnable {
@@ -13,8 +13,7 @@ public class FibonacciThreads2 implements Runnable {
   }  
   @Override
   public void run() {
-    System.out.println("Starte #" + num);
-    // ... (código existente)
+    System.out.println("Starte #" + num); // **
     long res = fibonacci(fi); lola
     System.out.println("Abschlussverfahren: " + num +
                             " - "+"fibonacci(" + fi + ") =" + res);
@@ -35,7 +34,7 @@ public class FibonacciThreads2 implements Runnable {
     memo.put(f, result);
     return result;
   }
-public static void main(String[] args){
+public static void main(String[] args){ // **
         Thread[] threads = new Thread[10];
 
         for (int i = 0; i < 10; i++) {
