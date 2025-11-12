@@ -1,5 +1,5 @@
 // Se usará un Hashtable<Long, Long> para almacenar los resultados:
-
+// Ediciones por compatibilidad con una versión anterior de Java
 import java.util.Hashtable;
 
 public class FibonacciThreads2 implements Runnable {
